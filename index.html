@@ -1,101 +1,87 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phantom's Texture Packs</title>
-  <style>
-    body {
-      background-color: #0d1117;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 40px;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 40px;
-    }
-    .packs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .pack {
-      background-color: #161b22;
-      border-radius: 12px;
-      padding: 20px;
-      width: 220px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-    }
-    .pack img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .pack h3 {
-      margin: 15px 0 10px 0;
-      font-size: 18px;
-    }
-    .download {
-      background-color: #238636;
-      color: #fff;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .download:hover {
-      background-color: #2ea043;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloxd Phantom</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Phantom's Texture Packs</h1>
+    <header>
+        <h1>Bloxd Phantom</h1>
+    </header>
 
-  <div class="packs">
-    <!-- 1K T-PACK -->
-    <div class="pack">
-      <img src="1K T-PACK.jpg" alt="1K T-PACK">
-      <h3>1K T-PACK</h3>
-      <a href="1K T-PACK.zip" download class="download">Download</a>
-    </div>
+    <h2>Texture Packs</h2>
 
-    <!-- 700 SUB TPACK -->
-    <div class="pack">
-      <img src="700 SUB TPACK.jpg" alt="700 SUB TPACK">
-      <h3>700 SUB TPACK</h3>
-      <a href="700 SUB TPACK.zip" download class="download">Download</a>
-    </div>
+    <main>
+        <section class="downloads" id="downloads">
+            <div class="download-item">
+                <img src="image/Astray.png" alt="Astray">
+                <h2>Astray (Updated)</h2>
+                <button class="custom-button" onclick="downloadFile('files/Astray.zip', 'Astray.zip')">Download</button>
+            </div>
 
-    <!-- 500 SUB TPACK(2) -->
-    <div class="pack">
-      <img src="500 SUB TPACK(2).jpg" alt="500 SUB TPACK(2)">
-      <h3>500 SUB TPACK(2)</h3>
-      <a href="500 SUB TPACK(2).zip" download class="download">Download</a>
-    </div>
+            <div class="download-item">
+                <img src="image/image4.png" alt="Relonix">
+                <h2>Relonix (Updated)</h2>
+                <button class="custom-button" onclick="downloadFile('files/Relonix.zip', 'Relonix.zip')">Download</button>
+            </div>
 
-    <!-- 400 SUB TPACK -->
-    <div class="pack">
-      <img src="400 SUB TPACK.jpg" alt="400 SUB TPACK">
-      <h3>400 SUB TPACK</h3>
-      <a href="400 SUB TPACK.zip" download class="download">Download</a>
-    </div>
+            <div class="download-item">
+                <img src="image/image5.png" alt="Relonix White">
+                <h2>Relonix White (Updated)</h2>
+                <button class="custom-button" onclick="downloadFile('files/RelonixWhite.zip', 'RelonixWhite.zip')">Download</button>
+            </div>
 
-    <!-- 300 SUB TPACK -->
-    <div class="pack">
-      <img src="300 SUB TPACK.jpg" alt="300 SUB TPACK">
-      <h3>300 SUB TPACK</h3>
-      <a href="300 SUB TPACK.zip" download class="download">Download</a>
-    </div>
-  </div>
+            <div class="download-item">
+                <img src="image/image0.png" alt="Sublight">
+                <h2>Sublight</h2>
+                <button class="custom-button" onclick="downloadFile('files/Sublight.zip', 'Sublight.zip')">Download</button>
+            </div>
 
+            <div class="download-item">
+                <img src="image/image1.png" alt="Bed Wars">
+                <h2>Bed Wars</h2>
+                <button class="custom-button" onclick="downloadFile('files/Bedwars.zip', 'Bedwars.zip')">Download</button>
+            </div>
+
+            <div class="download-item">
+                <img src="image/image3.png" alt="Bare Bones">
+                <h2>Bare Bones</h2>
+                <button class="custom-button" onclick="downloadFile('files/BareBones.zip', 'BareBones.zip')">Download</button>
+            </div>
+
+            <div class="download-item">
+                <img src="image/image2.png" alt="Xray Ultimate">
+                <h2>Xray Ultimate</h2>
+                <button class="custom-button" onclick="downloadFile('files/XrayUltimate.zip', 'XrayUltimate.zip')">Download</button>
+            </div>
+
+            <div class="download-item">
+                <img src="image/bloxd.png" alt="Clean Bloxd">
+                <h2>Clean Bloxd</h2>
+                <button class="custom-button" onclick="downloadFile('files/CleanBloxd.zip', 'CleanBloxd.zip')">Download</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Bloxd Phantom 2025</p>
+        <div class="social-media">
+            <a href="#" target="_blank">Bloxd Phantom Discord</a>
+            <a href="#" target="_blank">Bloxd Phantom YouTube</a>
+        </div>
+    </footer>
+
+    <script>
+        function downloadFile(filePath, fileName) {
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>
 
